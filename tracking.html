@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Matthijs Monfils</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ohr.html">ONE HUNDRED</a></li>
+          <li><a href="sein.html">SEIN</a></li>
+          <li><a href="tracking.html">City of Amsterdam</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">John Doe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="about">
+      <p class="section__text__p1">City of Amsterdam</p>
+      <h1 class="title">Data & Location-Tracking Provocatype</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/wibaut.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Course</h3>
+              <p><a href="https://openresearch.amsterdam/en/page/118377/dark-tech-studio">Dark Tech (link)</a><br>Creative Technologist</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Study</h3>
+              <p>AUAS<br>Computer Technology & Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              In my third year at the AUAS, where i follow 
+              Computer Technology & Computer Science (mainly specialized in Business IT & Management), 
+              I followed the course Dark Tech.<br>which focusses on the darker side of technology and the 
+              responsibility you carry when creating any form of Technology. 
+              Within this course i specialized in a certain role, the creative Technologist.<br>which mainly focusses on bringing together Design and Technology.<br> 
+              During this course i was assigned to do a project for the City of Amsterdam, for whom i, along with four other students 
+              had to create a provocatype (a provocing prototatype). The subject this provocatype had the based on was Data & Location-Tracking, 
+              a very sensitive topic, with which a lot of people, especially teenagers and adolescents, have a lot of experience.
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#provocatype'"
+      />
+    </section>
+    <section id="provocatype">
+      <p class="section__text__p1">Our Provocatype</p>
+      <h1 class="title">Jachtseizoen - the Data Hunt</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/tracking.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Course</h3>
+              <p>Dark Tech<br>Creative Technologist</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Study</h3>
+              <p>AUAS<br>Computer Technology & Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              During the creation of our Provocatype we came up with the idea to create a masked application. 
+              Where the user uses the application for a different reason than the actual intended purpose of the application. 
+              We masked it as a mobile game called 'Jachtseizoen - The Data Hunt', a game where you can catch your friends based on their tracking location 
+              and powerups. Based on the popular TV show 'Jachtseizoen' (Hunting Season). But in reality the actual purpose of our application 
+              was to get the location data of the user to sell to third parties. After the user has played the game for a while we reveal the true identity 
+              of the application, which should create awareness about Data & Location-Tracking, as well as how developers can use these types of Dark Patterns to 
+              mislead users.
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
